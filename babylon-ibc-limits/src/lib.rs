@@ -19,13 +19,27 @@ const IBC_TOKENS: [(
     MintTokenLimit,
     ThroughtputTokenLimit,
     MinimumGasPrice,
-); 1] = [
+); 3] = [
     (
         "channel-21",
         "ubbn",
         MintTokenLimit::from_u64(1000000000),           // 1000 BABY
         ThroughtputTokenLimit::from_u64(20000000),      // 20 BABY
-        Some(Gas::from_u64(30)),                        // 30 ubbn / gas unit
+        Some(Gas::from_u64(1)),                        // 1 ubbn / gas unit
+    ),
+    (
+        "channel-22",
+        "uusdc",
+        MintTokenLimit::from_u64(1000000000),           // 1000 usdc
+        ThroughtputTokenLimit::from_u64(20000000),      // 20 usdc
+        Some(Gas::from_u64(1)),                        // 1 uusdc / gas unit
+    ),
+    (
+        "channel-23",
+        "uatom",
+        MintTokenLimit::from_u64(1000000000),           // 1000 ATOM
+        ThroughtputTokenLimit::from_u64(20000000),      // 20 ATOM
+        Some(Gas::from_u64(1)),                        // 1 uatom / gas unit
     ),
 ];
 
